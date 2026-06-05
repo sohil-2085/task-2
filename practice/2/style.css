@@ -8,8 +8,11 @@
   margin: 0 auto;
   /* position: relative; */
 }
+
 .main {
   margin: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
   position: relative;
   /* padding: 20px; */
   border: 6px solid black;
@@ -76,18 +79,6 @@
   padding: 10px;
   width: 100%;
 }
-.like {
-  padding: 10px;
-  font-size: 14px;
-  cursor: pointer;
-  position: absolute;
-  top: 56%;
-  left: 16%;
-}
-.like:active {
-  color: red;
-  background-color: pink;
-}
 .main .color {
   margin-top: 10px;
   margin-left: 20px;
@@ -123,4 +114,31 @@
   width: 30px;
   aspect-ratio: 1;
   background-color: rgb(224, 62, 62);
+}
+.container .main .hero {
+  display: flex;
+  flex-direction: row;
+}
+.container .main .hero .shoes {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+}
+.container .main .hero .shoes .shoes_info {
+  display: flex;
+  flex-direction: row;
+}
+.container .main .hero .shoes .shoes_info .content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.container .main .hero .shoes .shoes_info .content .prize {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .main .hero .product_details {
+  margin-top: 30px;
 }
