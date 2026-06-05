@@ -1,15 +1,42 @@
-*{
+* {
   font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  /* position: relative; */
 }
 .main {
   margin: 20px;
-  padding: 20px;
-  border: 2px solid black;
+  position: relative;
+  /* padding: 20px; */
+  border: 6px solid black;
+}
+.main .sale {
+  background: red;
+  width: 50px;
+  padding: 10px;
+  color: white;
+  letter-spacing: 0.2em;
+  position: absolute;
+  top: -3%;
+  left: -2%;
+}
+.main .heading {
+  margin-top: 10px;
 }
 .main .heading h2 {
   text-align: center;
   font-weight: bolder;
   text-transform: uppercase;
+}
+.main .shoes_info {
+  margin-left: 20px;
+  margin-top: 30px;
+  line-height: 2;
+  position: relative;
 }
 .main .shoes_info img {
   width: 300px;
@@ -20,15 +47,80 @@
 .main .shoes_info a {
   color: black;
 }
-.main .shoes_info a:hover { 
+.main .shoes_info a:hover {
   text-decoration: none;
 }
-.main button {
+.main .add_to_cart button {
   background-color: black;
   color: white;
 }
-.main button:hover { 
+.main .add_to_cart button:hover {
   color: black;
   background-color: white;
   cursor: pointer;
+}
+.main .product_details {
+  margin-left: 20px;
+  margin-top: 10px;
+  line-height: 2;
+}
+.main .product_details ul {
+  margin-left: 20px;
+  list-style: square;
+  font-size: 16px;
+}
+.main .add_to_cart {
+  margin-top: 10px;
+}
+.main .add_to_cart button {
+  padding: 10px;
+  width: 100%;
+}
+.like {
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  position: absolute;
+  top: 56%;
+  left: 16%;
+}
+.like:active {
+  color: red;
+  background-color: pink;
+}
+.main .color {
+  margin-top: 10px;
+  margin-left: 20px;
+  display: flex;
+  gap: 10px;
+}
+.main .color_1 {
+  width: 30px;
+  aspect-ratio: 1;
+  background-color: black;
+}
+.main .color_2 {
+  width: 30px;
+  aspect-ratio: 1;
+  background-color: blue;
+}
+.main .color_3 {
+  width: 30px;
+  aspect-ratio: 1;
+  background-color: red;
+}
+.main .color_4 {
+  width: 30px;
+  aspect-ratio: 1;
+  background-color: yellow;
+}
+.main .color_5 {
+  width: 30px;
+  aspect-ratio: 1;
+  background-color: lightgreen;
+}
+.main .color_6 {
+  width: 30px;
+  aspect-ratio: 1;
+  background-color: rgb(224, 62, 62);
 }
