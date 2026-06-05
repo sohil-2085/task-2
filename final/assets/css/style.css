@@ -3,10 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  margin: 0;
-  padding: 0;
-}
 h1,
 h2,
 h3,
@@ -20,32 +16,7 @@ a {
   outline: none;
   color: black;
 }
-.top_div {
-  background-color: black;
-  display: flex;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: white;
-  gap: 545px;
-  padding-left: 855px;
+.container {
+  width: 1440px;
+  margin: 0 auto;
 }
-.top_div a {
-  color: white;
-  text-decoration: underline;
-}
-.top_div div {
-  padding: 0;
-  margin: 0;
-}
-.nav_section {
-  padding: 62px 100px;
-}
-.nav_section .navbar {
-  display: flex;
-}
-.nav_section .navbar .logo{
-  font-size: 32px;
-  font-weight: bold;
-}
-
-
