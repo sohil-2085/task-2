@@ -173,7 +173,7 @@ a {
 }
 .like:active {
   color: red;
-  background-color: pink;
+  background-color: rgb(163, 130, 136);
 }
 footer {
   text-align: center;
