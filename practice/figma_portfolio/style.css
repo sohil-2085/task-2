@@ -1,0 +1,197 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  line-height: 1;
+}
+figure,
+.figure,
+.picture {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+}
+.picture > img,
+.picture > iframe,
+.picture > video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.container {
+  width: 1152px;
+  margin: 0 auto;
+}
+.container .header .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 33px;
+  margin-top: 27px;
+  margin-right: 70px;
+  margin-bottom: 23px;
+}
+.container .header .navbar .nav_items:hover { 
+  text-decoration: underline;
+}
+.container .header .navbar .nav_items { 
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+}
+.container .hero .author {
+  padding: 158px 148px 71px 148px;
+} 
+.container .hero .author .content {
+  width: 506px;
+}
+.container .hero .author {
+  display: flex;
+  flex-direction: row;
+  gap: 106px;
+}
+.container .hero .author .content strong {
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 60px;
+  
+}
+.container .hero .author .content p {
+  margin-top: 40px;
+  margin-right: 9px;
+  font-size: 16px;
+  line-height: 1.3;
+}
+.container .hero .author .content button:active {
+  background-color: rgb(248, 141, 141);
+}
+.container .hero .author .content button {
+  margin-top: 38px;
+  padding: 17px 20px;
+  border: none;
+  background-color: rgb(252, 98, 98);
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.container .hero .author .photo { 
+  width: 243px;
+}
+.container .hero .author .photo .picture {
+  padding-top: 100%;
+}
+.container .post .posts_content {
+  padding: 7px 148px 32px 148px;
+}
+.container .post .posts_content .heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px 0;
+}
+.container .post .posts_content .heading span {
+  font-size: 22px;
+}
+.container .post .posts_content .heading a {
+  text-decoration: none;
+  color: rgb(14, 171, 207);
+}
+.container .post .posts_content .heading a:hover {
+  text-decoration: underline;
+}
+.container .post .posts_content .main_post {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  border-radius: 4px;
+}
+.container .post .posts_content .main_post .post_info {
+  padding: 24px 21px 7px 23px;
+  width: 418px;
+  box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.1);
+}
+.container .post .posts_content .main_post .post_info .post_heading {
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1.3;
+}
+.container .post .posts_content .main_post .post_info .date {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 12px;
+  margin-top: 20px;
+  font-size: 18px;
+  /* color: rgb(144, 145, 158); */
+}
+.container .post .posts_content .main_post .post_info .info {
+  font-size: 16px;
+  margin-top: 18px;
+  line-height: 1.3;
+}
+.container .featured {
+  padding: 30px 148px 115px 148px;
+}
+.container .featured .main .heading {
+  font-size: 22px;
+  line-height: 60px;
+  margin-bottom: 22px;
+}
+.container .featured .main .info .content {
+  margin-bottom: 46px;
+}
+.container .featured .main .info .content:last-child {
+  margin-bottom: 0;
+}
+.container .featured .main .info .content {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+}
+.container .featured .main .info .content .picture_info {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  gap: 28px;
+}
+.container .featured .main .info .content .picture_info .p_heading {
+  font-size: 30px;
+  font-weight: bold;
+}
+.container .featured .main .info .content .picture_info p .year { 
+  background-color: rgb(20, 40, 79);
+  color: white;
+  padding: 5px;
+  border-radius: 999px;
+  margin-right: 26px;
+}
+.container .featured .main .info .content .picture_info .description  {
+  font-size: 16px;
+  line-height: 1.5;
+} 
+.container .featured .main .info .content img {
+  /* padding-top: 100%; */
+  width: 246px;
+}
+.container .footer {
+  padding: 54px 465px;
+}
+.container .footer p {
+  font-size: 14px;
+  text-align: center;
+}
+.container .footer .icons {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  margin-bottom: 26px;
+}
