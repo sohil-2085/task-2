@@ -48,6 +48,9 @@ p {
   padding: 0;
   margin: 0;
 }
+ul, li {
+  list-style-type: none;
+}
 .container {
   width: 1440px;
   margin: 0 auto;
@@ -353,6 +356,9 @@ p {
   height: 100%;
   object-fit: cover;
 }
+.container .meals_section .meals .each_meal .meal_info {
+  padding-left: 20px;
+}
 .container .meals_section .meals .each_meal .meal_info h3 {
   font-size: 28px;
   margin-bottom: 20px;
@@ -446,6 +452,253 @@ p {
 .container .meals_section .meals .diet_list ul li:last-child {
   margin-bottom: 0;
 }
+.container .testimonial .main {
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: 700px 600px;
+  padding: 100px 0;
+}
+.container .testimonial .main .content {
+  padding: 80px 100px;
+}
+.container .testimonial .main .content .heading h3 {
+  font-size: 18px;
+  color: #e67e22;
+  margin-bottom: 20px;
+}
+.container .testimonial .main .content .heading h1 {
+  font-size: 36px;
+  color: #211207;
+  line-height: 1.1;
+}
+.container .testimonial .main .content .customer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+  row-gap: 48px;
+  margin-top: 80px;
+}
+.container .testimonial .main .content .customer .each_customer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+.container .testimonial .main .content .customer .each_customer p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: rgb(97, 90, 86);
+}
+.container .testimonial .main .content .customer .each_customer .image img {
+  width: 50px;
+  border-radius: 50%;
+}
+.container .testimonial .main .image {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 8px;
+  row-gap: 8px;
+}
+.container .testimonial .main .image .picture {
+  padding-top: 100%;
+  /* overflow: hidden; */
+}
+.container .testimonial .main .image .picture img {
+  transition: all 0.4s;
+}
+.container .testimonial .main .image .picture img:hover {
+  transform: scale(1.1);
+  transition: all 0.4s;
+}
+.container .price .main {
+  padding: 80px 100px;
+}
+.container .price .main .heading h3 {
+  font-size: 18px;
+  color: #e67e22;
+  margin-bottom: 20px;
+}
+.container .price .main .heading h1 {
+  font-size: 44px;
+  color: #211207;
+  line-height: 1.1;
+}
+.container .price .main .price_card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 100px;
+  gap: 100px;
+}
+.container .price .main .price_card .card {
+  position: relative;
+  overflow: hidden;
+  padding: 4.8rem;
+}
+.container .price .main .price_card .card .stamp p {
+  background-color: rgb(252, 211, 61);
+  padding: 10px 52px;
+  color: black;
+  font-weight: 600;
+  display: inline-block;
+  position: absolute;
+  transform: rotate(45deg);
+  top: 7%;
+  right: -10%;
+  margin: 0;
+}
+.container .price .main .price_card .card h3 {
+  font-size: 18px;
+  color: #e67e22;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 800;
+}
+.container .price .main .price_card .card h1 {
+  text-align: center;
+  font-size: 62px;
+  font-family: "Rubik" , sans-serif;
+  font-weight: 500;
+  color: rgb(51, 51, 51);
+  margin-bottom: 20px;
+}
+.container .price .main .price_card .card h1 span {
+  font-size: 32px;
+}
+.container .price .main .price_card .card p {
+  text-align: center;
+  font-size: 16px;
+  color: rgb(112, 112, 112);
+  margin-bottom: 40px;
+}
+.container .price .main .price_card .card ul li {
+  margin-bottom: 14px;
+  color: rgb(77, 77, 77);
+}
+.container .price .main .price_card .card ul li:last-child {
+  margin-bottom: 0;
+}
+.container .price .main .price_card .card ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container .price .main .price_card .card .button {
+  text-align: center;
+}
+.container .price .main .price_card .card .button .btn:link, .btn:active {
+  background-color: #e67e22;
+  color: white;
+  display: inline-block;
+  margin-top: 40px;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.4s;
+}
+.container .price .main .price_card .card .button .btn:link:hover, .btn:visited:hover {
+  transform: scale(1.1);
+}
+.container .features .main {
+  padding: 80px 200px 80px 200px;
+  display: flex;
+  flex-direction: row;
+  gap: 52px;
+}
+.container .features .main .each_feature {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s;
+}
+.container .features .main .each_feature:hover {
+  transform: scale(1.1);
+  transition: all 0.4s;
+}
+.container .features .main .each_feature ion-icon {
+  margin-bottom: 40px;
+}
+.container .features .main .each_feature strong {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #211207;
+}
+.container .features .main .each_feature p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #3e240c;
+  font-family: "Rubik", sans-serif;
+}
+ion-icon {
+    font-size: 32px; /* Controls the width and height */
+    color: #e67e22;  /* Controls the icon fill color */
+}
+.container .cta {
+}
+.container .cta .main {
+  padding: 80px 200px;
+}
+.container .cta .main .card {
+  background-color: rgb(232, 141, 56);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container .cta .main .card .content {
+  padding: 50px;
+}
+.container .cta .main .card .content h1 {
+  font-size: 40px;
+  color: rgba(33, 18, 7, 0.793);
+}
+.container .cta .main .card .content p {
+  line-height: 2;
+  margin-top: 40px;
+}
+.container .cta .main .card .content .input {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 20px;
+  column-gap: 20px;
+  padding-top: 44px;
+}
+.container .cta .main .card .content .input input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  margin-top: 10px;
+}
+.container .cta .main .card .content .input .common select {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  margin-top: 10px;
+}
+.container .cta .main .card .content .input .signup {
+  margin-top: 40px;
+}
+.container .cta .main .card .content .input .signup .btn:link, .btn:active {
+  background-color: rgb(69, 37, 11);
+  padding: 10px 88px;
+  border-radius: 10px;
+}
+.container .cta .main .card .content .input .signup .btn:link, .btn:visited {
+  background-color: rgb(69, 37, 11);
+  padding: 10px 88px;
+  border-radius: 10px;
+}
+.container .cta .main .card .image img {
+  width: 380px;
+  height: 447px;
+}
+.note {
+  padding-bottom: 80px;
+  color: rgb(84, 84, 84);
+  text-align: center;
+}
 .h3 {
   font-size: 28px;
 }
+
