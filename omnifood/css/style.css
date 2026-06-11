@@ -658,7 +658,36 @@ ion-icon {
 .container .cta .main .card .content .input {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  row-gap: 20px;
+  column-gap: 20px;
   padding-top: 44px;
+}
+.container .cta .main .card .content .input input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  margin-top: 10px;
+}
+.container .cta .main .card .content .input .common select {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  margin-top: 10px;
+}
+.container .cta .main .card .content .input .signup {
+  margin-top: 40px;
+}
+.container .cta .main .card .content .input .signup .btn:link, .btn:active {
+  background-color: rgb(69, 37, 11);
+  padding: 10px 88px;
+  border-radius: 10px;
+}
+.container .cta .main .card .content .input .signup .btn:link, .btn:visited {
+  background-color: rgb(69, 37, 11);
+  padding: 10px 88px;
+  border-radius: 10px;
 }
 .container .cta .main .card .image img {
   width: 380px;
