@@ -1,14 +1,9 @@
-/**************************/
-/* HEADER */
-/**************************/
-
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #fdf2e9;
 
-  /* Because we want header to be sticky later */
   height: 9.6rem;
   padding: 0 4.8rem;
   position: relative;
@@ -17,11 +12,6 @@
 .logo {
   height: 2.2rem;
 }
-
-/**************************/
-/* NAVIGATION */
-/**************************/
-
 .main-nav-list {
   list-style: none;
   display: flex;
@@ -57,7 +47,7 @@
   background-color: #cf711f;
 }
 
-/* MOBILE */
+
 .btn-mobile-nav {
   border: none;
   background: none;
@@ -75,10 +65,6 @@
 .icon-mobile-nav[name="close-outline"] {
   display: none;
 }
-
-/**************************/
-/* HERO SECTION */
-/**************************/
 
 .section-hero {
   background-color: #fdf2e9;
@@ -167,10 +153,6 @@
   opacity: 50%;
 }
 
-/**************************/
-/* HOW IT WORKS SECTION */
-/**************************/
-
 .section-how {
   padding: 9.6rem 0;
 }
@@ -187,51 +169,55 @@
   line-height: 1.8;
 }
 
+.step-img-box:hover {
+  transform: scale(1.1);
+  transition: all 0.4s;
+}
 .step-img-box {
-  position: relative;
-
+  /* position: relative;
+  
   display: flex;
   align-items: center;
+  justify-content: center; */
+  display: flex;
+  position: relative;
+  align-items: center;
   justify-content: center;
+  transition: all 0.4s;
 }
 
 .step-img-box::before,
 .step-img-box::after {
   content: "";
-  display: block;
+  display: flex;
   border-radius: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
 .step-img-box::before {
-  width: 60%;
-  /* height: 60%; */
-
-  /* 60% of parent's width */
-  padding-bottom: 60%;
-
-  background-color: #fdf2e9;
-  z-index: -2;
+  width: 100px;
+  padding-bottom: 250px;
+  /* background-color: rgba(230, 125, 34, 0.438); */
+  /* background-image: radial-gradient(rgba(230, 125, 34, 0.5), rgb(244, 182, 128), rgba(255, 226, 200, 0.438)); */
+  box-shadow: 0px 0px 250px 100px #daa87d;
 }
 
-.step-img-box::after {
+/* .step-img-box::after {
   width: 45%;
   padding-bottom: 45%;
   background-color: #fae5d3;
   z-index: -1;
-}
+} */
 
 .step-img {
   width: 35%;
   /* z-index: 10; */
 }
 
-/**************************/
-/* MEALS SECTION */
-/**************************/
 
 .section-meals {
   padding: 9.6rem 0;
@@ -315,9 +301,6 @@
   font-size: 1.8rem;
 }
 
-/**************************/
-/* TESTIMONIALS SECTION */
-/**************************/
 
 .section-testimonials {
   background-color: #fdf2e9;
@@ -375,9 +358,6 @@
   transform: scale(1.1);
 }
 
-/**************************/
-/* MEALS SECTION */
-/**************************/
 
 .section-pricing {
   padding: 9.6rem 0;
@@ -460,7 +440,13 @@
   line-height: 1.6;
   text-align: center;
 }
-
+.feature {
+  transition: all 0.4s;
+}
+.feature:hover {
+  transform: scale(1.1);
+  transition: all 0.4s;
+}
 .feature-icon {
   color: #e67e22;
   height: 3.2rem;
@@ -483,9 +469,6 @@
   line-height: 1.8;
 }
 
-/**************************/
-/* CTA SECTION */
-/**************************/
 
 .section-cta {
   /* top / right / bottom / left */
@@ -571,9 +554,6 @@
   box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
 }
 
-/**************************/
-/* FOOTER */
-/**************************/
 
 .footer {
   padding: 12.8rem 0;
