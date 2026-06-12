@@ -11,8 +11,9 @@ FONT SIZE SYSTEM (px)
   box-sizing: border-box;
 }
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Rubik", sans-serif;
   line-height: 1;
+  /* width: 100vw; */
 }
 figure,
 .figure,
@@ -48,7 +49,8 @@ p {
   padding: 0;
   margin: 0;
 }
-ul, li {
+ul,
+li {
   list-style-type: none;
 }
 .container {
@@ -482,7 +484,6 @@ ul, li {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  
 }
 .container .testimonial .main .content .customer .each_customer p {
   font-size: 14px;
@@ -557,7 +558,7 @@ ul, li {
 .container .price .main .price_card .card h1 {
   text-align: center;
   font-size: 62px;
-  font-family: "Rubik" , sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 500;
   color: rgb(51, 51, 51);
   margin-bottom: 20px;
@@ -586,7 +587,8 @@ ul, li {
 .container .price .main .price_card .card .button {
   text-align: center;
 }
-.container .price .main .price_card .card .button .btn:link, .btn:active {
+.container .price .main .price_card .card .button .btn:link,
+.container .price .main .price_card .card .button .btn:active {
   background-color: #e67e22;
   color: white;
   display: inline-block;
@@ -596,7 +598,8 @@ ul, li {
   font-weight: 600;
   transition: all 0.4s;
 }
-.container .price .main .price_card .card .button .btn:link:hover, .btn:visited:hover {
+.container .price .main .price_card .card .button .btn:link:hover,
+.container .price .main .price_card .card .button .btn:visited:hover {
   transform: scale(1.1);
 }
 .container .features .main {
@@ -628,21 +631,25 @@ ul, li {
   color: #3e240c;
   font-family: "Rubik", sans-serif;
 }
-ion-icon {
-    font-size: 32px; /* Controls the width and height */
-    color: #e67e22;  /* Controls the icon fill color */
+.container .features .main .each_feature ion-icon {
+  font-size: 32px; /* Controls the width and height */
+  color: #e67e22; /* Controls the icon fill color */
 }
-.container .cta {
-}
+/* .container .cta {
+} */
 .container .cta .main {
   padding: 80px 200px;
 }
 .container .cta .main .card {
-  background-color: rgb(232, 141, 56);
-  border-radius: 8px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  /* background-color: rgb(232, 141, 56); */
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.15);
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  border-radius: 11px;
+  /* display: flex;
+  flex-direction: row; */
+  /* justify-content: space-between; */
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 .container .cta .main .card .content {
   padding: 50px;
@@ -659,7 +666,7 @@ ion-icon {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 20px;
-  column-gap: 20px;
+  column-gap: 26px;
   padding-top: 44px;
 }
 .container .cta .main .card .content .input input {
@@ -679,20 +686,33 @@ ion-icon {
 .container .cta .main .card .content .input .signup {
   margin-top: 40px;
 }
-.container .cta .main .card .content .input .signup .btn:link, .btn:active {
+.container .cta .main .card .content .input .signup .btn:link,
+.container .cta .main .card .content .input .signup .btn:active {
+  background-color: rgb(69, 37, 11);
+  padding: 10px 95px;
+  border-radius: 10px;
+}
+/* .container .cta .main .card .content .input .signup .btn:link,
+.container .cta .main .card .content .input .signup .btn:visited {
   background-color: rgb(69, 37, 11);
   padding: 10px 88px;
   border-radius: 10px;
+} */
+.container .cta .main .card .image {
+  background-image:
+    linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url("../img/eating.jpg");
+  background-size: cover;
+  background-position: center;
 }
-.container .cta .main .card .content .input .signup .btn:link, .btn:visited {
-  background-color: rgb(69, 37, 11);
-  padding: 10px 88px;
-  border-radius: 10px;
-}
-.container .cta .main .card .image img {
+/* .container .cta .main .card .image img {
   width: 380px;
   height: 447px;
-}
+} */
 .note {
   padding-bottom: 80px;
   color: rgb(84, 84, 84);
@@ -701,4 +721,62 @@ ion-icon {
 .h3 {
   font-size: 28px;
 }
-
+footer {
+  padding: 200px 200px 100px 200px;
+}
+footer .info {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  column-gap: 40px;
+}
+footer .info .el--1 {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+footer .info .el--1 .logo {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+footer .info .el--1 .logo img {
+  width: 158px;
+}
+footer .info .el--1 .logo .social ion-icon {
+  filter: brightness(0);
+  font-size: 32px;
+  opacity: 0.5;
+  margin-right: 12px;
+}
+footer .info .el--1 .logo .social ion-icon:last-child {
+  margin-right: 0;
+}
+footer .info .el--1 .copyright {
+  opacity: 0.5;
+  font-size: 14px;
+}
+footer .info .el--2 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  opacity: 0.7;
+}
+footer .info .el--2 p{
+  line-height: 1.6;
+  font-size: 14px;
+}
+footer .info .el--3 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  opacity: 0.7;
+}
+footer .info .el--3 ul {
+  line-height: 2.2;
+}
+footer .info .el--3 ul li {
+  font-size: 14px;
+}
+.el--h3 {
+  font-size: 22px;
+}
