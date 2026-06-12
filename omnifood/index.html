@@ -778,9 +778,12 @@
                 <div class="here common">
                   <h3>Where did you here from us?</h3>
                   <select name="social" class="social">
+                    <option value="" disabled hidden selected>
+                      Please Choose one option:
+                    </option>
                     <option value="instagram">Instagram</option>
                     <option value="facebook">Facebook</option>
-                    <option value="friends" selected>Friends</option>
+                    <option value="friends">Friends</option>
                     <option value="other">Other</option>
                   </select>
                 </div>
@@ -789,13 +792,63 @@
                 </div>
               </div>
             </div>
-            <div class="image">
-              <img src="img/eating.jpg" alt="" />
-            </div>
+            <div
+              class="image"
+              role="img"
+              aria-label="Woman enjoying food"
+            ></div>
           </div>
         </div>
       </section>
       <!-- </div> -->
+      <footer>
+        <div class="info">
+          <div class="el--1">
+            <div class="logo">
+              <img src="img/omnifood-logo.png" alt="logo" />
+              <div class="social">
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+              </div>
+            </div>
+            <p class="copyright">
+              Copyright © 2027 by Omnifood, Inc. All right reserved.
+            </p>
+          </div>
+          <div class="el--2">
+            <h3 class="el--h3">Contact us</h3>
+            <p>623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
+            <p>415-201-6370<br>hello@omnifood.com</p>
+          </div>
+          <div class="el--3">
+            <h3 class="el--h3">Account</h3>
+            <ul>
+              <li><a href="#">Create Account</a></li>
+              <li><a href="#">Sign in</a></li>
+              <li><a href="#">iOS App</a></li>
+              <li><a href="#">Android App</a></li>
+            </ul>
+          </div>
+          <div class="el--3">
+            <h3 class="el--h3">Company</h3>
+            <ul>
+              <li><a href="#">About Omnifood</a></li>
+              <li><a href="#">For Business</a></li>
+              <li><a href="#">Cooking Partner</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div class="el--3">
+            <h3 class="el--h3">Resource</h3>
+            <ul>
+              <li><a href="#">Recipe directory</a></li>
+              <li><a href="#">Help center</a></li>
+              <li><a href="#">Privacy & terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
