@@ -66,10 +66,11 @@ const obs = new IntersectionObserver(
     const ent = entries[0];
     console.log(ent);
 
-    if (!ent.isIntersecting) {
+    if (ent.isIntersecting === false) {
       document.body.classList.add("sticky");
     }
-    if (ent.isIntersecting) {
+
+    if (ent.isIntersecting === true) {
       document.body.classList.remove("sticky");
     }
   },
@@ -77,28 +78,10 @@ const obs = new IntersectionObserver(
     // In the viewport
     root: null,
     threshold: 0,
-    rootMargin : "-80px",
+    rootMargin: "-80px",
   }
 );
 obs.observe(sectionHeroEl);
-
-// const sectionHeroEl = document.querySelector(".section-hero");
-
-// const obs = new IntersectionObserver(
-//   function (entries) {
-//     const ent = entries[0];
-//     console.log(ent);
-//     if (ent.isIntersecting === false){
-//       document.querySelector(".header").classList.add(".sticky");
-//     }
-//   },
-//   {
-//     //in the viewport
-//     root: null,
-//     threshold: 0,
-//   },
-// );
-// obs.observe(sectionHeroEl);
 
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
